@@ -1,0 +1,7 @@
+ddgs
+requests
+beautifulsoup4
+regex
+together
+openai
+python-dotenv

@@ -34,8 +34,8 @@ LAGC/
 
 ```bash
 # 1. Clone & enter
-git clone https://github.com/<you>/agentic-codegen.git
-cd agentic-codegen
+git clone https://github.com/YacineMajdoub/LACG.git
+cd LACG
 
 # 2. Environment
 python -m venv .venv

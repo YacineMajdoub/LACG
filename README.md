@@ -49,7 +49,7 @@ cp .env.example .env               # then paste your (rotated!) API keys
 ### Run a single task
 
 ```bash
-python scripts/run_task.py --task "Create a structured output example using LangChain and Pydantic with a BaseModel named AnswerWithJustification..."
+python scripts/run_task.py --task <natural language task>
 ```
 
 ```text
@@ -66,6 +66,6 @@ python scripts/run_task.py --task "Create a structured output example using Lang
 ### Run a batch dataset
 
 ```bash
-python scripts/process_dataset.py --input tasks.json --output results.json
+python scripts/process_dataset.py --input <dataset_name>.json --output results.json
 ```
 

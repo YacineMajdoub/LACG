@@ -39,4 +39,4 @@ def call_llm_together(question: str) -> str:
 
 
 def call_llm(question: str)-> str:
-    return call_llm_open_router(question)
+    return call_llm_openai(question)

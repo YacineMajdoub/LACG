@@ -1,12 +1,19 @@
+## LACG: Library Aware Code Generation
+
+[![Python 3.8+](https://img.shields.io/badge/Python-3.8%2B-blue)](https://www.python.org/) [![License: MIT](https://img.shields.io/badge/License-MIT-red.svg)](https://opensource.org/licenses/MIT)
+
+This repository contains the implementation and experimental materials for our study of library-related errors in LLM-generated code. The system evaluates and reduces common library usage issues, including incorrect import paths, deprecated library usage, hallucinated libraries, unused imports, and missing imports. It combines LLM-based code generation with documentation retrieval and validation to identify and correct library-related errors, enabling a systematic evaluation of how different LLMs handle evolving software libraries.
 
 ## 🗂️ Repository structure
 
 ```text
-agentic-codegen/
-├── README.md
-├── requirements.txt
-├── .env.example                  # ← your keys go here (never committed)
-├── .gitignore
+LAGC/
+├── datasets            
+│   ├── evaluation_dataset.json
+│   └── exploratory_dataset.json
+├── scripts/
+│   ├── run_task.py               # CLI: single task
+│   └── process_dataset.py        # CLI: batch JSON benchmarking
 ├── src/
 │   └── agentic_codegen/
 │       ├── __init__.py
@@ -17,9 +24,10 @@ agentic-codegen/
 │       ├── compiler.py           # syntax check + auto pip-install
 │       ├── agents.py             # analyzer / generator / validator roles
 │       └── pipeline.py           # orchestration + self-healing loop
-└── scripts/
-    ├── run_task.py               # CLI: single task
-    └── process_dataset.py        # CLI: batch JSON benchmarking
+├── .env.example                  # ← your keys go here (never committed)
+├── .gitignore
+├── README.md
+└── requirements.txt
 ```
 
 ## 🚀 Quick start
